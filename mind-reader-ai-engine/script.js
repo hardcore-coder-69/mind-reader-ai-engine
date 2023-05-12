@@ -39,8 +39,11 @@ function readMindUsingAI() {
 
         if (progress >= 100) {
             const finalResult = document.getElementById("think-tank").value;
-            if(finalResult == '') FINAL_MSG = "Nice try! You didn't think of a number."
-            progressMsg.innerText = FINAL_MSG + finalResult
+            if(finalResult == '') {
+                progressMsg.innerText = "Nice try! You didn't think of a number."
+            } else {
+                progressMsg.innerText = FINAL_MSG + finalResult
+            }
             clearInterval(interval);
         }
     }, 35);
