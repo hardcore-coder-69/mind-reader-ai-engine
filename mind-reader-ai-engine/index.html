@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Engine</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h3>AI Engine- Mind Reader</h3>
+        <div>Think of a number between 1 and 100</div>
+
+        <div class="ipt-cont">
+            <input type="text" placeholder="Think tank" id="think-tank">
+        </div>
+
+        <div class="btn-container">
+            <button onclick="readMindUsingAI()" class="read-btn">Read my mind</button>
+        </div>
+    </div>
+
+
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>AI Engine</h2>
+            <div class="inner-content">
+                <div class="progress-msg" id="progress-msg">
+                    Progress message
+                </div>
+                <div class="progress-bar-container">
+                    <div id="progress-bar" class="progress-bar"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
